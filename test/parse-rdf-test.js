@@ -13,5 +13,6 @@ describe('parseRDF', ()=> {
         const book = parseRDF(rdf);
         expect(book).to.be.an('object');
         expect(book).to.have.a.property('id', 132);
+        expect(book).to.have.a.property('title', 'The Art of War');
     });
 });
